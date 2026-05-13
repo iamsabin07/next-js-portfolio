@@ -1,0 +1,13 @@
+{
+  "name": "Sabin Thapa — Full Stack Engineer",
+  "short_name": "Sabin Thapa",
+  "description": "Full Stack Engineer with 3+ years building production-grade software.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060608",
+  "theme_color": "#C9A84C",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
