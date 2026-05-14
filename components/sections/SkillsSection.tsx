@@ -83,7 +83,15 @@ const darken = (hex: string, amt: number) => {
 };
 
 export default function SkillsSection() {
+  // Default to grid for SSR safety
   const [view, setView] = useState<'grid' | 'solar'>('grid');
+  
+  // Set default view based on screen size once the component mounts
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth > 760) {
+      setView('solar');
+    }
+  }, []);
   
   // Refs
   const gridContainerRef = useRef<HTMLDivElement>(null);
@@ -439,18 +447,6 @@ export default function SkillsSection() {
           </div>
           <div className={styles.viewToggle}>
             <button
-              className={`${styles.toggleBtn} ${view === 'grid' ? styles.active : ''}`}
-              onClick={() => setView('grid')}
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <rect x="3" y="3" width="7" height="7" />
-                <rect x="14" y="3" width="7" height="7" />
-                <rect x="3" y="14" width="7" height="7" />
-                <rect x="14" y="14" width="7" height="7" />
-              </svg>
-              Grid
-            </button>
-            <button
               className={`${styles.toggleBtn} ${view === 'solar' ? styles.active : ''}`}
               onClick={() => {
                 if (window.innerWidth > 760) setView('solar');
@@ -463,6 +459,18 @@ export default function SkillsSection() {
                 <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" />
               </svg>
               Orbit
+            </button>
+            <button
+              className={`${styles.toggleBtn} ${view === 'grid' ? styles.active : ''}`}
+              onClick={() => setView('grid')}
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+              </svg>
+              Grid
             </button>
           </div>
         </div>

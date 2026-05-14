@@ -39,17 +39,23 @@
   transition: filter 0.5s ease;
 }
 
-/* Day theme base */
+/* Day theme base - Keeps natural colors but adds a strong, saturated gold shadow */
 :global([data-theme="day"]) .base {
-  filter: drop-shadow(0 0 24px rgba(154, 106, 10, 0.2));
+  filter: brightness(0.9) contrast(1.1) drop-shadow(0 0 28px rgba(180, 130, 20, 0.6));
 }
 
 .wrap:hover .base {
   filter: drop-shadow(0 0 52px rgba(201, 168, 76, 0.55));
 }
 
+/* Day theme hover - Even stronger glow on hover */
 :global([data-theme="day"]) .wrap:hover .base {
-  filter: drop-shadow(0 0 52px rgba(154, 106, 10, 0.4));
+  filter: brightness(0.9) contrast(1.1) drop-shadow(0 0 60px rgba(180, 130, 20, 0.85));
+}
+
+/* Apply the exact same color balance to the overlays */
+:global([data-theme="day"]) .overlay {
+  filter: brightness(0.9) contrast(1.1);
 }
 
 /* ── Overlay images (stacked, revealed on hover) ── */
