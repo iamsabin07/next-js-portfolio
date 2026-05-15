@@ -46,12 +46,12 @@ export default function About() {
       <div className="profile-card reveal">
         <div className="profile-photo-wrap">
           <Image
-            src="/sabin.png"
+            src="/sabin-card.png"
             alt="Sabin Thapa"
             width={420} 
-            height={480}
+            height={420}
             className="profile-photo"
-            style={{background:'transparent', width: '100%', height: 'auto'}}
+            style={{background:'transparent', width: '100%', height: '520px'}}
           />
           <div className="profile-photo-overlay"></div>
         </div>

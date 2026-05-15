@@ -22,12 +22,11 @@ export default function Hero() {
           <span className="hero-status-dot"><span className="hero-status-pulse"></span>available for work</span>
         </div>
 
-        <div className="hero-eyebrow">Full Stack Developer</div>
         <h1 className="hero-name">
           Not your average<br /><em>full-stack engineer.</em>
         </h1>
         <p className="hero-desc">
-          3+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
+          4+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
         </p>
         <div className="hero-cta">
           <a href="#work" className="btn-primary"><span>See the work →</span></a>
@@ -36,7 +35,7 @@ export default function Hero() {
 
         <div className="hero-metrics">
           <div className="hero-metric-item">
-            <span className="hero-metric-num">3+</span>
+            <span className="hero-metric-num">4+</span>
             <span className="hero-metric-label">Years in<br/>Production</span>
           </div>
           <div className="hero-metric-divider"></div>

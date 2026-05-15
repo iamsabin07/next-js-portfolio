@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section id="contact">
-      <div className="contact-eyebrow reveal">04 — Let&apos;s Connect</div>
+      <div className="contact-eyebrow reveal">05 — Let&apos;s Connect</div>
       <h2 className="contact-title reveal reveal-delay-1">Let&apos;s Build<br /><em>Together</em></h2>
       <a href="mailto:sabin.thapa07051999@gmail.com" className="contact-email reveal reveal-delay-2">
         sabin.thapa07051999@gmail.com

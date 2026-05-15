@@ -43,7 +43,7 @@
 }
 
 .sectionTag::before {
-  content: '03';
+  content: '04';
   font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   color: rgba(var(--particle), 0.4);
