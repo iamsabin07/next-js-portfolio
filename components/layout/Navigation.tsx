@@ -41,6 +41,7 @@ export default function Navigation() {
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
+            <li><a href="#terminal">Terminal</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

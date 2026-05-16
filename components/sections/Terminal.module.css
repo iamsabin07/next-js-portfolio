@@ -1,0 +1,189 @@
+/* ================================================
+   Terminal.module.css
+   ================================================ */
+
+/* ─── Section Wrapper ─── */
+.sectionWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 120px 60px;
+}
+
+/* ─── Terminal Container ─── */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 48px; /* 1.5x from 32px */
+  width: 100%;
+  max-width: 1500px; /* 1.5x from 1000px */
+  animation: fadeUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ─── Individual Window ─── */
+.window {
+  background: #1e1e1e;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* ─── Top Bar (Traffic Lights) ─── */
+.topBar {
+  background: #252526;
+  display: flex;
+  align-items: center;
+  padding: 15px 24px;
+  gap: 12px;
+}
+
+.dot { width: 18px; height: 18px; border-radius: 50%; }
+.dotClose { background: #ff5f56; }
+.dotMin { background: #ffbd2e; }
+.dotMax { background: #27c93f; }
+
+/* ─── Tab Bar ─── */
+.tabBar {
+  background: #252526;
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid #1e1e1e;
+}
+.tabBar::-webkit-scrollbar { display: none; }
+
+.tab {
+  background: #2d2d2d;
+  color: #969696;
+  padding: 15px 30px;
+  font-size: 19px; /* 1.5x from 13px */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid #252526;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.tab:hover { background: #2b2b2b; }
+.tabActive {
+  background: #1e1e1e;
+  color: #ffffff;
+  border-top: 2px solid var(--gold);
+}
+.tabOutput {
+  background: #1e1e1e;
+  color: #ffffff;
+  border-top: 2px solid transparent;
+  cursor: default;
+}
+
+/* ─── File Icons ─── */
+.iconHtml { color: #e34c26; font-weight: bold; }
+.iconJs { color: #f1e05a; font-weight: bold; }
+.iconCs { color: #178600; font-weight: bold; }
+.iconPy { color: #3572A5; font-weight: bold; }
+.iconTerminal { color: #ffffff; }
+
+/* ─── Editor Body ─── */
+.editor {
+  display: flex;
+  padding: 24px 0;
+  font-size: 19px; /* 1.5x from 13px */
+  line-height: 1.6;
+  height: 400px; /* FIXED HEIGHT prevents layout jumps */
+  overflow-y: auto;
+}
+
+.lineNumbers {
+  padding: 0 24px;
+  color: #858585;
+  text-align: right;
+  user-select: none;
+  border-right: 1px solid #404040;
+  display: flex;
+  flex-direction: column;
+}
+
+.codeArea {
+  padding: 0 24px;
+  color: #d4d4d4;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ─── Output Area ─── */
+.outputArea {
+  height: 400px; /* FIXED HEIGHT matches editor */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.cmdOutput {
+  background: #1e1e1e;
+  padding: 24px;
+  color: #cccccc;
+  font-size: 19px; /* 1.5x from 13px */
+  line-height: 1.6;
+  flex: 1;
+}
+
+.cmdPath {
+  color: #27c93f;
+  margin-right: 12px;
+}
+
+.cursorBlink {
+  display: inline-block;
+  width: 12px;
+  height: 22px;
+  background-color: #ccc;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+.browserOutput {
+  background: #ffffff;
+  color: #000000;
+  padding: 36px;
+  flex: 1;
+  font-family: 'Times New Roman', Times, serif; 
+}
+.browserOutput h1 {
+  font-size: 3em; /* Scaled up */
+  font-weight: bold;
+  margin: 0;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ─── Syntax Highlighting ─── */
+.kw { color: #569cd6; }       
+.kw2 { color: #c586c0; }      
+.func { color: #dcdcaa; }     
+.str { color: #ce9178; }      
+.type { color: #4ec9b0; }     
+.tag { color: #569cd6; }      
+.attr { color: #9cdcfe; }     
+
+/* Mobile scaling */
+@media (max-width: 900px) {
+  .sectionWrap { padding: 80px 24px; }
+  .container { gap: 24px; }
+  .window { min-width: 100%; }
+  .editor, .outputArea { height: 280px; font-size: 14px; }
+  .tab { font-size: 14px; padding: 12px 20px; }
+  .cmdOutput { font-size: 14px; }
+}

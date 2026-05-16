@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Sabin Thapa",
   },
   description:
-    "Sabin Thapa — Full Stack Engineer with 3+ years building production-grade software across the full stack: cloud infrastructure, distributed systems, AI/LLM integration, and real-time platforms.",
+    "Sabin Thapa — Full Stack Engineer with 4+ years building production-grade software across the full stack: cloud infrastructure, distributed systems, AI/LLM integration, and real-time platforms.",
   keywords: [
     "Sabin Thapa",
     "Full Stack Engineer",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Sabin Thapa",
     title: "Sabin Thapa — Full Stack Engineer",
     description:
-      "3+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.",
+      "4+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.",
     images: [
       {
         url: "/og-image.png",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sabin Thapa — Full Stack Engineer",
     description:
-      "3+ years building production-grade software across the full stack — cloud, AI/LLM, distributed systems.",
+      "4+ years building production-grade software across the full stack — cloud, AI/LLM, distributed systems.",
     images: ["/og-image.png"],
     creator: "@iamsabin07",
   },

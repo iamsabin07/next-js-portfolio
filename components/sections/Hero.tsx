@@ -21,7 +21,6 @@ export default function Hero() {
           <span className="hero-location-tag">~/sabin — kearny · nj</span>
           <span className="hero-status-dot"><span className="hero-status-pulse"></span>available for work</span>
         </div>
-
         <h1 className="hero-name">
           Not your average<br /><em>full-stack engineer.</em>
         </h1>
@@ -32,7 +31,6 @@ export default function Hero() {
           <a href="#work" className="btn-primary"><span>See the work →</span></a>
           <a href="#contact" className="btn-text">Hire me</a>
         </div>
-
         <div className="hero-metrics">
           <div className="hero-metric-item">
             <span className="hero-metric-num">4+</span>
@@ -55,10 +53,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
       <HeroHuman />
-
-      <div className="scroll-hint"><div className="scroll-line" style={{marginTop: '-20px'}}></div><span>Scroll</span></div>
+      <div className="scroll-hint"><div className="scroll-line"></div><span>Scroll</span></div>
     </section>
   );
 }
