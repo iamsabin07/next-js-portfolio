@@ -66,7 +66,7 @@ export const WORK_DATA: WorkEntry[] = [
         { active: true,  text: '<strong>2023</strong> — Established reusable frontend templates; 70% faster project setup.' },
         { active: true,  text: '<strong>2024</strong> — Implemented CI/CD in Azure DevOps with Docker & Kubernetes.' },
         { active: true, text: '<strong>2025</strong> — Designed reusable SDKs for OpenAl, AWS, SignatureAPI and Azure integrations ' },
-        { active: false, text: '<strong>2025</strong> — Working on AI-integrated product streams and cloud architecture.' },
+        { active: false, text: '<strong>2026</strong> — Working on AI-integrated product streams and cloud architecture.' },
       ],
       tags: ['.NET Core', 'React', 'Next.js', 'EFCore', 'Cypress', 'Azure', 'Docker', 'Kubernetes', 'TypeScript'],
     },
