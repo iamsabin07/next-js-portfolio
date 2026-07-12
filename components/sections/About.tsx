@@ -46,7 +46,7 @@ export default function About() {
       <div className="profile-card reveal">
         <div className="profile-photo-wrap">
           <Image
-            src="/sabin-card.png"
+            src="/sabin-card-og.png"
             alt="Sabin Thapa"
             width={420} 
             height={420}
