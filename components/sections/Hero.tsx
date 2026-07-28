@@ -25,22 +25,22 @@ export default function Hero() {
           Not your average<br /><em>full-stack engineer.</em>
         </h1>
         <p className="hero-desc">
-          4+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
+          6+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
         </p>
         <div className="hero-cta">
-          <a href="/resume.pdf" 
+          <a href="/resume.docx" 
             target="_blank" 
             rel="noreferrer" className="btn-primary"><span>Resume →</span></a>   
           <a href="#contact" className="btn-text">Hire me</a>
         </div>
         <div className="hero-metrics">
           <div className="hero-metric-item">
-            <span className="hero-metric-num">4+</span>
+            <span className="hero-metric-num">6+</span>
             <span className="hero-metric-label">Years in<br/>Production</span>
           </div>
           <div className="hero-metric-divider"></div>
           <div className="hero-metric-item">
-            <span className="hero-metric-num">15+</span>
+            <span className="hero-metric-num">25+</span>
             <span className="hero-metric-label">Apps<br/>Shipped</span>
           </div>
           <div className="hero-metric-divider"></div>

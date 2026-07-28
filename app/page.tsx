@@ -12,6 +12,7 @@ import Marquee from '@/components/ui/Marquee';
 import Navigation from '@/components/layout/Navigation';
 import { useEffect } from 'react';
 import Terminal from '@/components/sections/Terminal';
+import Projects from '@/components/sections/Projects';
 
 export default function Home() {
   useEffect(() => {
@@ -71,6 +72,7 @@ export default function Home() {
         <Marquee items={['Full Stack', 'Cloud', 'AI Integration', 'DevOps', 'Full Stack', 'Cloud', 'AI Integration', 'DevOps']} />
         <About />
         <Work />
+        <Projects/>
         <Terminal/>
         <section id="skills">
           <SkillsSection/>

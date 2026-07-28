@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { WORK_DATA, type WorkEntry } from '../data/workdata';
+import { PROJECT_DATA, type WorkEntry } from '../data/workdata';
 
 // Lazy-load the modal so it doesn't block the initial render
 const WorkModal = dynamic(() => import('../ui/WorkModal'), { ssr: false });
@@ -134,10 +134,10 @@ function ServiceCard({ entry, revealClass, onClick }: CardProps) {
 }
 
 /* ─── Main section ─── */
-export default function Work() {
+export default function Projects() {
   const [activeEntry, setActiveEntry] = useState<WorkEntry | null>(null);
 
-  /* Reveal-on-scroll observer (keep your existing logic) */
+  /* Reveal-on-scroll observer */
   useEffect(() => {
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
@@ -157,14 +157,11 @@ export default function Work() {
   /* Responsive grid fix */
   useEffect(() => {
     function fixGrids() {
-      const ph = document.querySelector('#work .projects-half') as HTMLElement;
-      const sg = document.querySelector('.skills-grid') as HTMLElement;
+      const ph = document.querySelector('#projects .projects-half') as HTMLElement;
       if (window.innerWidth <= 900) {
         if (ph) ph.style.gridTemplateColumns = '1fr';
-        if (sg) sg.style.gridTemplateColumns = '1fr';
       } else {
         if (ph) ph.style.gridTemplateColumns = '1fr 1fr';
-        if (sg) sg.style.gridTemplateColumns = 'repeat(3,1fr)';
       }
     }
     fixGrids();
@@ -172,33 +169,17 @@ export default function Work() {
     return () => window.removeEventListener('resize', fixGrids);
   }, []);
 
-  // 5 work entries: 3 on top row, 2 on bottom row
-  const topThree  = WORK_DATA.slice(0, 3);
-  const bottomTwo = WORK_DATA.slice(3);
-
   return (
     <>
-      <section id="work">
+      <section id="projects">
         <div className="section-header reveal">
-          <div className="section-tag">02 — Experience</div>
-          <h2 className="section-title">Where I&apos;ve <em>Worked</em></h2>
+          <div className="section-tag">03 — Projects</div>
+          <h2 className="section-title">Things I&apos;ve <em>Built</em></h2>
         </div>
 
-        {/* Top row — 3 cards */}
-        <div className="services-grid">
-          {topThree.map((entry, i) => (
-            <ServiceCard
-              key={entry.id}
-              entry={entry}
-              revealClass={`reveal reveal-delay-${i + 1}`}
-              onClick={() => setActiveEntry(entry)}
-            />
-          ))}
-        </div>
-
-        {/* Bottom row — 2 cards */}
+        {/* 2 cards, side by side */}
         <div className="projects-half">
-          {bottomTwo.map((entry, i) => (
+          {PROJECT_DATA.map((entry, i) => (
             <ServiceCard
               key={entry.id}
               entry={entry}

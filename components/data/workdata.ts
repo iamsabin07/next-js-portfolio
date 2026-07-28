@@ -22,7 +22,7 @@ export interface WorkTimelineItem {
 export interface WorkEntry {
   id: string;
   num: string;
-  icon: 'monitor' | 'users' | 'layers' | 'sun' | 'dollar';
+  icon: 'monitor' | 'users' | 'layers' | 'sun' | 'dollar' | 'shield' | 'heart';
   title: string;
   sub: string;
   desc: string;
@@ -38,6 +38,9 @@ export interface WorkEntry {
   };
 }
 
+/* ─────────────────────────────────────────────────────────
+   WORK  — professional experience (employers / key clients)
+   ───────────────────────────────────────────────────────── */
 export const WORK_DATA: WorkEntry[] = [
   {
     id: 'ads',
@@ -125,7 +128,6 @@ export const WORK_DATA: WorkEntry[] = [
       ],
       timelineLabel: 'Journey',
       timeline: [
-
         { active: true,  text: '<strong>Phase 1</strong> — Optimised and maintained royalty platform for $75M+ annual volume.' },
         { active: true,  text: '<strong>Phase 2</strong> — Pinpointed flaws of paper-based processes; designed digital workflow.' },
         { active: true,  text: '<strong>Phase 3</strong> — Deployed automated e-forms; 7× return rate increase.' },
@@ -135,8 +137,77 @@ export const WORK_DATA: WorkEntry[] = [
     },
   },
   {
-    id: 'consensus',
+    id: 'amex',
     num: '04',
+    icon: 'shield',
+    title: 'American Express',
+    sub: 'Software Engineering Intern · 2021 – 2022',
+    desc: 'Built secure REST APIs and event-driven systems with Apache Kafka processing 500K+ daily transactions, cutting latency by 35%. Implemented ASP.NET Core Identity, JWT, and OAuth 2.0 auth, and integrated payment gateways with full PCI-DSS compliance.',
+    badge: 'New York, NY',
+    modal: {
+      sub: 'Software Engineering Intern · New York, NY · 2021 – 2022',
+      stats: [
+        { num: '500K+', label: 'Daily Transactions' },
+        { num: '35%', label: 'Latency Cut' },
+        { num: '3×', label: 'Peak Volume Handled' },
+      ],
+      ringLabel: 'Engineering Focus',
+      rings: [
+        { label: 'Transaction APIs',  pct: 40, color: '#C9A84C' },
+        { label: 'Auth & Security',   pct: 30, color: '#8B6914' },
+        { label: 'Infra & Monitoring', pct: 30, color: '#2a2010' },
+      ],
+      timelineLabel: 'Journey',
+      timeline: [
+        { active: true, text: '<strong>Kafka</strong> — Built event-driven transaction pipelines processing 500K+ requests/day.' },
+        { active: true, text: '<strong>Auth</strong> — Implemented ASP.NET Core Identity, JWT & OAuth 2.0 session management.' },
+        { active: true, text: '<strong>Payments</strong> — Integrated payment gateways with full PCI-DSS compliance, zero incidents.' },
+        { active: true, text: '<strong>Scale</strong> — Deployed containerized microservices via Docker/Kubernetes/AWS for 3× peak volume.' },
+        { active: true, text: '<strong>Observability</strong> — Stood up ELK Stack & CloudWatch monitoring for proactive issue detection.' },
+      ],
+      tags: ['ASP.NET Core', 'Apache Kafka', 'JWT', 'OAuth 2.0', 'Docker', 'Kubernetes', 'AWS', 'PCI-DSS', 'Selenium'],
+    },
+  },
+  {
+    id: 'cedargate',
+    num: '05',
+    icon: 'heart',
+    title: 'Cedar Gate Technologies',
+    sub: 'Web Developer · 2019 – 2020',
+    desc: 'Designed 15+ REST APIs and React UIs for healthcare data integration, serving 5,000+ provider users and processing 1M+ patient records monthly. Built Kafka-driven batch ingestion pipelines handling 200K+ records daily with HIPAA-aligned data handling.',
+    badge: 'New York, NY',
+    modal: {
+      sub: 'Web Developer · New York, NY · 2019 – 2020',
+      stats: [
+        { num: '15+', label: 'REST APIs Shipped' },
+        { num: '5K+', label: 'Provider Users' },
+        { num: '1M+', label: 'Records / Month' },
+      ],
+      ringLabel: 'Platform Focus',
+      rings: [
+        { label: 'API & UI Development', pct: 45, color: '#C9A84C' },
+        { label: 'Data Pipelines',       pct: 35, color: '#8B6914' },
+        { label: 'Testing & Docs',        pct: 20, color: '#2a2010' },
+      ],
+      timelineLabel: 'Journey',
+      timeline: [
+        { active: true, text: '<strong>APIs</strong> — Designed 15+ REST APIs & React UIs for healthcare data integration.' },
+        { active: true, text: '<strong>Pipelines</strong> — Built Kafka batch ingestion handling 200K+ records daily.' },
+        { active: true, text: '<strong>Compliance</strong> — Ensured HIPAA-aligned handling of sensitive patient data.' },
+        { active: true, text: '<strong>Quality</strong> — Wrote unit/integration tests, reduced defects before deployment.' },
+      ],
+      tags: ['React', 'REST APIs', 'Kafka', 'MySQL', 'PostgreSQL', 'HIPAA', 'Healthcare Data'],
+    },
+  },
+];
+
+/* ─────────────────────────────────────────────────────────
+   PROJECTS — independent / side projects
+   ───────────────────────────────────────────────────────── */
+export const PROJECT_DATA: WorkEntry[] = [
+  {
+    id: 'consensus',
+    num: '01',
     icon: 'sun',
     title: 'Consensus',
     sub: 'AI Boardroom Simulator · Oct–Dec 2025',
@@ -167,7 +238,7 @@ export const WORK_DATA: WorkEntry[] = [
   },
   {
     id: 'nfc',
-    num: '05',
+    num: '02',
     icon: 'dollar',
     title: 'NFC Card System',
     sub: 'Digital Identity Platform · Jul–Aug 2025',
