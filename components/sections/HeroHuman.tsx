@@ -51,7 +51,7 @@ export default function HeroHuman() {
             </div>
             <div className={styles.infoDivider} />
             <div className={styles.infoDetail}>Kearny, NJ</div>
-            <div className={styles.infoDetail}>4+ Years Experience</div>
+            <div className={styles.infoDetail}>6+ Years Experience</div>
             <div className={styles.infoDetail}>MS Data Science · 4.0 GPA</div>
           </div>
         </div>
