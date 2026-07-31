@@ -17,9 +17,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap: 48px; /* 1.5x from 32px */
+  gap: 48px; 
   width: 100%;
-  max-width: 1500px; /* 1.5x from 1000px */
+  max-width: 1500px;
   animation: fadeUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
