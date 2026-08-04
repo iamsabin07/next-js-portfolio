@@ -25,7 +25,7 @@ export default function Hero() {
           Not your average<br /><em>full-stack engineer.</em>
         </h1>
         <p className="hero-desc">
-          6+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
+          7+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
         </p>
         <div className="hero-cta">
           <a href="/resume.docx" 
@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
         <div className="hero-metrics">
           <div className="hero-metric-item">
-            <span className="hero-metric-num">6+</span>
+            <span className="hero-metric-num">7+</span>
             <span className="hero-metric-label">Years in<br/>Production</span>
           </div>
           <div className="hero-metric-divider"></div>
