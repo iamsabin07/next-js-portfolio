@@ -136,38 +136,63 @@ export const WORK_DATA: WorkEntry[] = [
       tags: ['E-forms', 'Workflow Automation', 'Royalty Platform', '.NET Core', 'Financial Systems', 'SignatureAPI'],
     },
   },
-  {
-    id: 'amex',
-    num: '04',
-    icon: 'shield',
-    title: 'American Express',
-    sub: 'Software Engineering Intern · 2021 – 2022',
-    desc: 'Built secure REST APIs and event-driven systems with Apache Kafka processing 500K+ daily transactions, cutting latency by 35%. Implemented ASP.NET Core Identity, JWT, and OAuth 2.0 auth, and integrated payment gateways with full PCI-DSS compliance.',
-    badge: 'New York, NY',
-    modal: {
-      sub: 'Software Engineering Intern · New York, NY · 2021 – 2022',
-      stats: [
-        { num: '500K+', label: 'Daily Transactions' },
-        { num: '35%', label: 'Latency Cut' },
-        { num: '3×', label: 'Peak Volume Handled' },
-      ],
-      ringLabel: 'Engineering Focus',
-      rings: [
-        { label: 'Transaction APIs',  pct: 40, color: '#C9A84C' },
-        { label: 'Auth & Security',   pct: 30, color: '#8B6914' },
-        { label: 'Infra & Monitoring', pct: 30, color: '#2a2010' },
-      ],
-      timelineLabel: 'Journey',
-      timeline: [
-        { active: true, text: '<strong>Kafka</strong> — Built event-driven transaction pipelines processing 500K+ requests/day.' },
-        { active: true, text: '<strong>Auth</strong> — Implemented ASP.NET Core Identity, JWT & OAuth 2.0 session management.' },
-        { active: true, text: '<strong>Payments</strong> — Integrated payment gateways with full PCI-DSS compliance, zero incidents.' },
-        { active: true, text: '<strong>Scale</strong> — Deployed containerized microservices via Docker/Kubernetes/AWS for 3× peak volume.' },
-        { active: true, text: '<strong>Observability</strong> — Stood up ELK Stack & CloudWatch monitoring for proactive issue detection.' },
-      ],
-      tags: ['ASP.NET Core', 'Apache Kafka', 'JWT', 'OAuth 2.0', 'Docker', 'Kubernetes', 'AWS', 'PCI-DSS', 'Selenium'],
-    },
+{
+  id: 'amex',
+  num: '04',
+  icon: 'shield',
+  title: 'American Express',
+  sub: 'Software Engineering Intern · July 2021 – April 2022',
+  desc: 'Developed and maintained 10+ ASP.NET Core REST APIs, built 20+ reusable React.js components for 5,000+ internal users, resolved 30+ bugs, and contributed to Agile development, testing, and CI/CD workflows.',
+  badge: 'New York, NY',
+  modal: {
+    sub: 'Software Engineering Intern · New York, NY · July 2021 – April 2022',
+    stats: [
+      { num: '10+', label: 'REST APIs Built' },
+      { num: '20+', label: 'React Components' },
+      { num: '5,000+', label: 'Internal Users' },
+    ],
+    ringLabel: 'Engineering Focus',
+    rings: [
+      { label: 'Backend APIs', pct: 40, color: '#C9A84C' },
+      { label: 'Frontend UI', pct: 35, color: '#8B6914' },
+      { label: 'Testing & Agile', pct: 25, color: '#2a2010' },
+    ],
+    timelineLabel: 'Journey',
+    timeline: [
+      {
+        active: true,
+        text: '<strong>Backend</strong> — Assisted in developing and maintaining 10+ secure REST API endpoints using ASP.NET Core.'
+      },
+      {
+        active: true,
+        text: '<strong>Frontend</strong> — Built and enhanced 20+ reusable React.js components powering applications used by 5,000+ internal users.'
+      },
+      {
+        active: true,
+        text: '<strong>Collaboration</strong> — Worked with senior engineers to implement features, resolve 30+ bugs, and improve application stability.'
+      },
+      {
+        active: true,
+        text: '<strong>Quality</strong> — Wrote 50+ unit tests and participated in code reviews to improve code quality and reduce regressions.'
+      },
+      {
+        active: true,
+        text: '<strong>Agile</strong> — Collaborated with a team of 8+ engineers across 15+ sprint cycles while gaining experience with Git workflows and CI/CD practices.'
+      },
+    ],
+    tags: [
+      'ASP.NET Core',
+      'React.js',
+      'REST APIs',
+      'C#',
+      'Unit Testing',
+      'Git',
+      'CI/CD',
+      'Agile',
+      'Code Reviews',
+    ],
   },
+},
   {
     id: 'cedargate',
     num: '05',

@@ -28,7 +28,7 @@ export default function Hero() {
           7+ years building production-grade software across the full stack — cloud infrastructure, distributed systems, AI/LLM integration — with measurable impact at every layer.
         </p>
         <div className="hero-cta">
-          <a href="/resume.docx" 
+          <a href="/resume.pdf" 
             target="_blank" 
             rel="noreferrer" className="btn-primary"><span>Resume →</span></a>   
           <a href="#contact" className="btn-text">Hire me</a>
