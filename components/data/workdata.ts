@@ -265,8 +265,8 @@ export const PROJECT_DATA: WorkEntry[] = [
     id: 'nfc',
     num: '02',
     icon: 'dollar',
-    title: 'NFC Card System',
-    sub: 'Digital Identity Platform · Jul–Aug 2025',
+    title: 'Perfect Synergy',
+    sub: 'NFC Card System · Jul–Aug 2025',
     desc: 'Architected and shipped a full-stack digital identity platform in under 8 weeks. NFC tap-to-share contact delivery, dynamic profile routing, Stripe payments, and real-time WebSockets analytics — 100+ profiles without app installs.',
     badge: 'Completely Digtal',
     modal: {
